@@ -1,10 +1,13 @@
 import Image from "next/image";
+import offer from "../../public/offer.jpg";
 
 const Ads = () => {
   return (
-    <a href="#">
-      <Image src="assets/images/offer.jpg" alt="ads" class="w-full" />
-    </a>
+    <div className="container py-16">
+      <a href="#">
+        <Image src={offer} alt="ads" class="w-full" />
+      </a>
+    </div>
   );
 };
 

@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "../public/logo.svg";
 
 const Header = () => {
   return (
     <header className="py-4 shadow-sm bg-white">
       <div className="container flex items-center justify-between">
         <Link href="/">
-          <Image src="/logo.svg" alt="Logo" className="w-32" />
+          <Image src={Logo} alt="Logo" className="w-32" />
         </Link>
 
         <div className="w-full max-w-xl relative flex">

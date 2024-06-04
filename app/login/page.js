@@ -1,5 +1,6 @@
 import LoginForm from "@/components/auth/LoginForm";
 import SocialLogins from "@/components/auth/SocialLogins";
+import Link from "next/link";
 
 const LoginPage = () => {
   return (
@@ -11,9 +12,9 @@ const LoginPage = () => {
         <SocialLogins />
         <p className="mt-4 text-center text-gray-600">
           Do not have account?{" "}
-          <a href="register.html" className="text-primary">
+          <Link href="/register" className="text-primary">
             Register now
-          </a>
+          </Link>
         </p>
       </div>
     </div>

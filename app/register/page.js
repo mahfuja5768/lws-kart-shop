@@ -1,7 +1,9 @@
 import RegistrationForm from "@/components/auth/RegistrationForm";
 import SocialLogins from "@/components/auth/SocialLogins";
+import Link from "next/link";
 
 const RegistrationPage = () => {
+  
   return (
     <div className="contain py-16">
       <div className="max-w-lg mx-auto shadow px-6 py-7 rounded overflow-hidden">
@@ -13,9 +15,9 @@ const RegistrationPage = () => {
         <SocialLogins />
         <p className="mt-4 text-center text-gray-600">
           Already have account?{" "}
-          <a href="login.html" className="text-primary">
+          <Link href="/login" className="text-primary">
             Login now
-          </a>
+          </Link>
         </p>
       </div>
     </div>

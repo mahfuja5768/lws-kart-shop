@@ -1,4 +1,5 @@
 import Image from "next/image";
+import methods from "../public/methods.png";
 
 const Copyright = () => {
   return (
@@ -6,11 +7,7 @@ const Copyright = () => {
       <div className="container flex items-center justify-between">
         <p className="text-white">&copy; TailCommerce - All Right Reserved</p>
         <div>
-          <Image
-            src="assets/images/methods.png"
-            alt="methods"
-            className="h-5"
-          />
+          <Image src={methods} alt="methods" className="h-5" />
         </div>
       </div>
     </div>
